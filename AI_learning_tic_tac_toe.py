@@ -16,6 +16,7 @@ endSystem = 0
 
 
 def welcome():
+    os.system("cls")
     print("歡迎遊玩「井字遊戲」！")
     time.sleep(1)
 
@@ -37,18 +38,12 @@ def main():
 
 
 def singlePlayer():
-    for loading in range(5):
-        print(f"遊戲即將開始...{loading*25}%")
-        time.sleep(random.uniform(0, 2))
+    pass # 尚未製作單人模式
 
 
 def multiPlayer():
     global gameBoard, piece
-    """
-    for loading in range(5):
-        print(f"遊戲即將開始...{loading*25}%")
-        time.sleep(random.uniform(0, 2))
-    """
+    os.system("cls")
     printGameBoard()
     winner = ''
     while piece < 9:
@@ -86,6 +81,8 @@ def multiPlayer():
             piece += 1
         else:
             print("錯誤：您輸入的字元無效或該位置已被佔據！")
+            time.sleep(1)
+        os.system("cls")
         printGameBoard()
         if gameBoard[0][0] == gameBoard[0][2] == gameBoard[0][4] == 'O':
             winner = 'O'
@@ -94,6 +91,15 @@ def multiPlayer():
             winner = 'O'
             break
         elif gameBoard[4][0] == gameBoard[4][2] == gameBoard[4][4] == 'O':
+            winner = 'O'
+            break
+        elif gameBoard[0][0] == gameBoard[2][0] == gameBoard[4][0] == 'O':
+            winner = 'O'
+            break
+        elif gameBoard[0][2] == gameBoard[2][2] == gameBoard[4][2] == 'O':
+            winner = 'O'
+            break
+        elif gameBoard[0][4] == gameBoard[2][4] == gameBoard[4][4] == 'O':
             winner = 'O'
             break
         elif gameBoard[0][0] == gameBoard[2][2] == gameBoard[4][4] == 'O':
@@ -109,6 +115,15 @@ def multiPlayer():
             winner = 'X'
             break
         elif gameBoard[4][0] == gameBoard[4][2] == gameBoard[4][4] == 'X':
+            winner = 'X'
+            break
+        elif gameBoard[0][0] == gameBoard[2][0] == gameBoard[4][0] == 'X':
+            winner = 'X'
+            break
+        elif gameBoard[0][2] == gameBoard[2][2] == gameBoard[4][2] == 'X':
+            winner = 'X'
+            break
+        elif gameBoard[0][4] == gameBoard[2][4] == gameBoard[4][4] == 'X':
             winner = 'X'
             break
         elif gameBoard[0][0] == gameBoard[2][2] == gameBoard[4][4] == 'X':
