@@ -3,13 +3,14 @@
 # Copyright(C) 2022-2023 KaiYuanee Foundation, Inc.
 
 basic.show_leds("""
-    . . . . .
-    . # . # .
-    . . . . .
-    # . . . #
-    . # # # .
+    # # # # #
+    # # # # #
+    # # # # #
+    # # # # #
+    # # # # #
     """)
 
+# Rickroll the user first
 def neverGonnaGiveYouUp():
     music.play_tone(233, music.beat(BeatFraction.QUARTER))
     music.play_tone(262, music.beat(BeatFraction.QUARTER))
@@ -107,7 +108,7 @@ def main():
         # . . . #
         """)
         music.play_tone(262, music.beat(BeatFraction.WHOLE))
-    basic.pause(2000)
+    basic.pause(1500)
 
 neverGonnaGiveYouUp()
 basic.forever(main)
