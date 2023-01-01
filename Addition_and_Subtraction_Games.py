@@ -45,6 +45,39 @@ def neverGonnaGiveYouUp():
     music.play_tone(233, music.beat(BeatFraction.QUARTER))
     music.play_tone(277, music.beat(BeatFraction.HALF))
 
+    basic.pause(200)
+
+    music.play_tone(233, music.beat(BeatFraction.QUARTER))
+    music.play_tone(262, music.beat(BeatFraction.QUARTER))
+    music.play_tone(277, music.beat(BeatFraction.QUARTER))
+    music.play_tone(233, music.beat(BeatFraction.QUARTER))
+    music.play_tone(349, music.beat(BeatFraction.HALF))
+    music.play_tone(349, music.beat(BeatFraction.HALF))
+    music.play_tone(311, music.beat(BeatFraction.DOUBLE))
+
+    basic.pause(200)
+
+    music.play_tone(208, music.beat(BeatFraction.QUARTER))
+    music.play_tone(233, music.beat(BeatFraction.QUARTER))
+    music.play_tone(262, music.beat(BeatFraction.QUARTER))
+    music.play_tone(208, music.beat(BeatFraction.QUARTER))
+    music.play_tone(277, music.beat(BeatFraction.WHOLE))
+    music.play_tone(262, music.beat(BeatFraction.HALF))
+    music.play_tone(277, music.beat(BeatFraction.HALF))
+    music.play_tone(262, music.beat(BeatFraction.HALF))
+    music.play_tone(233, music.beat(BeatFraction.HALF))
+    music.play_tone(208, music.beat(BeatFraction.QUARTER))
+    music.play_tone(233, music.beat(BeatFraction.QUARTER))
+    music.play_tone(262, music.beat(BeatFraction.QUARTER))
+    music.play_tone(208, music.beat(BeatFraction.QUARTER))
+    music.play_tone(277, music.beat(BeatFraction.HALF))
+    music.play_tone(311, music.beat(BeatFraction.QUARTER))
+    music.play_tone(262, music.beat(BeatFraction.HALF))
+    music.play_tone(233, music.beat(BeatFraction.HALF))
+    music.play_tone(208, music.beat(BeatFraction.HALF))
+    music.play_tone(175, music.beat(BeatFraction.HALF))
+    music.play_tone(311, music.beat(BeatFraction.HALF))
+    music.play_tone(277, music.beat(BeatFraction.DOUBLE))
 
 signList = ['+', '-']
 def main():
