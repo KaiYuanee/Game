@@ -37,10 +37,11 @@ def main():
 
 
 def singlePlayer():
-    pass # 尚未製作單人模式
+    pass  # 尚未製作單人模式
 
 
 def multiPlayer():
+    resetGameBoard()
     global gameBoard, piece
     os.system("cls")
     printGameBoard()
